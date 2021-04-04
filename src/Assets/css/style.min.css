@@ -1,0 +1,15 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+body {
+  background-color: #10CAB7; }

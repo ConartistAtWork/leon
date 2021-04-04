@@ -1,0 +1,43 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+.project-item {
+  width: 100%;
+  max-width: 501px; }
+
+.project-item img {
+  width: 100%; }
+
+.project-item .img-container {
+  height: 371px; }
+
+.project-item h1 {
+  margin-bottom: 10px;
+  font-weight: 800; }
+
+.project-item p {
+  font-size: 15px; }
+
+.project-item .text-container {
+  padding: 20px;
+  background-color: white; }
+
+@media (max-width: 540px) {
+  .portfolio .container {
+    width: 90%;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, 90%); }
+
+  .project-item .img-container {
+    height: 0;
+    padding-bottom: 70%; } }

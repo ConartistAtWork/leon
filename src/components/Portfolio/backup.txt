@@ -1,0 +1,126 @@
+@import "../../Assets/scss/config.scss";
+
+.portfolio {
+  background-color: $light-gray;
+  height: auto;
+  padding-top: 50px;
+}
+
+.portfolio .wrapper {
+  height: auto;
+}
+
+.portfolio .container {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  margin-bottom: 150px;
+  grid-template-columns: repeat(3, 501px);
+}
+
+.portfolio .section-title {
+  h1 {
+    color: $dark-gray;
+  }
+}
+
+@media (max-width: 1640px) {
+  .portfolio .container {
+    width: 100%;
+    max-width: 1002px;
+    display: grid;
+    margin-bottom: 150px;
+    grid-template-columns: repeat(2, 501px);
+    gap: 50px;
+  }
+}
+
+import React, {useState, useEffect} from 'react'
+import "./Portfolio.css"
+import "../ProjectItem/ProjectItem.css"
+import SectionTitle from '../SectionTitle/SectionTitle'
+import ProjectItem from '../ProjectItem/ProjectItem'
+import GrayBox1 from "../../imgs/10.jpg"
+import GrayBox2 from "../../imgs/11.jpg"
+import GrayBox3 from "../../imgs/12.jpg"
+
+
+
+function Portfolio() {
+
+  const [items, setItems] = useState([])
+  const [show, setShow] = useState(false)
+
+  useEffect(() => {
+
+  });
+
+  const things = [{title: "Project Here", 
+                  text: "My creative ability is very difficult to measure because it can manifest in so many surprising and.",
+                  url: GrayBox1}, 
+                  {title: "Project Here", 
+                  text: "My creative ability is very difficult to measure because it can manifest in so many surprising and.",
+                  url: GrayBox2}, 
+                  {title: "Project Here", 
+                  text: "My creative ability is very difficult to measure because it can manifest in so many surprising and.",
+                  url: GrayBox3},
+                  {title: "Project Here", 
+                  text: "My creative ability is very difficult to measure because it can manifest in so many surprising and.",
+                  url: GrayBox1}, 
+                  {title: "Project Here", 
+                  text: "My creative ability is very difficult to measure because it can manifest in so many surprising and.",
+                  url: GrayBox2}, 
+                  {title: "Project Here", 
+                  text: "My creative ability is very difficult to measure because it can manifest in so many surprising and.",
+                  url: GrayBox3}];
+  const projectItems = things.slice(0, 3).map((things) =>
+    <ProjectItem
+      title={things.title}
+      text={things.text}
+      url={things.url}
+    />
+  );
+
+  return (
+    <div className="portfolio section">
+      <div className="wrapper">
+        <SectionTitle title={"portfolio"} slogan={"If you do it right, it will last forever."}/>
+        <div className="container">
+          {/* <ProjectItem 
+            title="Project Here" 
+            text="My creative ability is very difficult to measure because it can manifest in so many surprising and."
+            url={GrayBox1}
+          />
+          <ProjectItem
+            title="Project Here"
+            text="My creative ability is very difficult to measure because it can manifest in so many surprising and."
+            url={GrayBox2}
+          />  
+          <ProjectItem
+            title="Project Here"
+            text="My creative ability is very difficult to measure because it can manifest in so many surprising and."
+            url={GrayBox3}
+          />  
+          <ProjectItem 
+            title="Project Here" 
+            text="My creative ability is very difficult to measure because it can manifest in so many surprising and."
+            url={GrayBox1}
+          />  
+          <ProjectItem
+            title="Project Here"
+            text="My creative ability is very difficult to measure because it can manifest in so many surprising and."
+            url={GrayBox2}
+          />  
+          <ProjectItem
+            title="Project Here"
+            text="My creative ability is very difficult to measure because it can manifest in so many surprising and."
+            url={GrayBox3}
+          /> */}
+          {projectItems}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Portfolio

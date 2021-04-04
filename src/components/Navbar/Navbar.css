@@ -1,0 +1,136 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+.wrapper {
+  max-width: calc(1450px + 10%);
+  margin: auto; }
+
+.wrapper-nr {
+  max-width: 1110px;
+  margin: auto; }
+
+.branding {
+  margin: 25px 0;
+  cursor: pointer; }
+
+.branding img {
+  width: 45px; }
+
+.hamburger {
+  cursor: pointer;
+  margin-right: 50px; }
+
+.grid {
+  display: grid;
+  justify-content: center;
+  text-align: center; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto; }
+
+.menu {
+  position: fixed;
+  display: flex;
+  transition: right 0.5s;
+  overflow: auto;
+  height: 100vh;
+  top: 0;
+  right: -490px;
+  width: 490px;
+  flex-direction: column;
+  margin: 0;
+  background-color: #2C4755;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px 0;
+  z-index: 200; }
+  .menu .close {
+    font-size: 25px;
+    font-weight: 100;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 50px; }
+  .menu h1 {
+    font-size: 20px;
+    color: #637988;
+    margin-bottom: 20px; }
+  .menu .sections {
+    overflow: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px; }
+  .menu .menu-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px; }
+  .menu .menu-section *:not(h1) {
+    cursor: pointer; }
+  .menu .nav-link {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: #F6F6F6; }
+  .menu .nav-link:hover {
+    color: #10CAB7; }
+  .menu .nav-link:not(:last-child) {
+    margin-bottom: 10px; }
+  .menu .menu-section.main .nav-link {
+    font-size: 30px;
+    margin: 0; }
+
+.menu.show {
+  right: 0; }
+
+.menu.show > * {
+  z-index: 100; }
+
+.filter {
+  content: "";
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.205);
+  opacity: 1;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s; }
+
+.filter.show {
+  display: block;
+  opacity: 1;
+  z-index: 0;
+  animation-name: fade-out;
+  animation-duration: 0.3s; }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999; }
+
+@keyframes fade-out {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@media (max-width: 1150px) {
+  .wrapper-nr {
+    width: 95%; } }
+@media only screen and (min-device-width: 150px) and (max-device-width: 490px) {
+  .menu {
+    width: 100%; } }

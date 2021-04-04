@@ -1,0 +1,49 @@
+@import "../../Assets/scss/config.scss";
+
+.section-title h1{
+  color: $gray;
+  font-size: 150px;
+  font-weight: 800;
+  letter-spacing: -7px;
+  margin: 0;
+}
+
+.section-title h1,
+.section-title p {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.section-title p {
+  margin-top: -50px;
+  font-size: 25px;
+  color: $light-black;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 650px) {
+  .section-title h1 {
+    font-size: 80px;
+    letter-spacing: -5px;
+  }
+  .section-title p {
+    margin-top: -30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .section-title h1 {
+    font-size: 70px;
+    letter-spacing: -3px;
+  }
+  .section-title p {
+    margin-top: -25px;
+    font-size: 18px;
+  }
+}

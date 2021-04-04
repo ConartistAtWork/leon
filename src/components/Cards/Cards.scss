@@ -1,0 +1,12 @@
+@import "../../Assets/scss/config.scss";
+
+.cards {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1110px) {
+  .cards {
+    flex-direction: column;
+  }
+}

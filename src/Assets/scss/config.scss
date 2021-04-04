@@ -1,0 +1,27 @@
+$aqua: #10CAB7;
+$gray: #F6F6F6;
+$light-gray: #fafafa;
+$dark-gray: #ebeced;
+$dark-blue: #2C4755;
+$light-blue: #637988;
+$black: #1f2021;
+$light-black: #4d4c4c;
+$white: #ffffff;
+$font: 'Work Sans', sans-serif;
+
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+}
+
+img, a {
+  display: block;
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}

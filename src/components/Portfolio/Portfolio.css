@@ -1,0 +1,66 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+.portfolio {
+  background-color: #fafafa;
+  height: auto; }
+
+.portfolio:before {
+  content: "";
+  display: block;
+  height: 80px;
+  /* fixed header height*/
+  margin: -80px 0 0;
+  /* negative fixed header height */
+  background-color: white; }
+
+.portfolio .wrapper {
+  height: auto;
+  padding: 0;
+  padding-bottom: 75px; }
+
+.portfolio .container {
+  width: fit-content;
+  width: 1920px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 501px);
+  gap: 2rem;
+  justify-content: space-around;
+  margin-bottom: 75px; }
+
+.portfolio .section-title h1 {
+  color: #ebeced;
+  margin-top: 50px; }
+
+.portfolio button {
+  font-family: 'Work Sans', sans-serif;
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 800;
+  background: none; }
+
+.portfolio button:hover {
+  cursor: pointer; }
+
+@media (max-width: 1500px) {
+  .portfolio .container {
+    width: 90%;
+    max-width: 1200px; } }
+@media (max-width: 540px) {
+  .portfolio .container {
+    width: 90%;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, 90%); } }

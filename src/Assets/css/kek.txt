@@ -1,0 +1,47 @@
+@media  (min-width: 1067px){
+
+}
+
+@media (min-width: 1921px) {
+
+}
+
+@media (max-width: 1919px) {
+
+
+}
+
+@media (max-width: 1519px) {
+
+
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 650px) {
+
+}
+
+@media (max-width: 590px) {
+
+
+}
+
+
+@media only screen 
+and (min-device-width : 280px) 
+and (max-device-width : 320px) {
+
+}
+
+@media only screen 
+and (min-device-width : 280px) 
+and (max-device-width : 480px) {
+
+}

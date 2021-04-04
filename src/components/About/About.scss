@@ -1,0 +1,85 @@
+@import "../../Assets/scss/config.scss";
+
+.about .wrapper { height: auto;
+padding-bottom: 70px;}
+
+.about h1 {
+  padding-top: 50px;
+}
+
+.about .item p:first-child {
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 70px;
+  line-height: 40px;
+  color: $dark-blue;
+  display: block;
+  padding-left: 5px;
+}
+
+.about .item p:first-child:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -50px;
+    margin: 0 auto;
+    left: 0;
+    width: 35%;
+    background: $aqua;
+}
+
+.about .side-img.left {
+  min-width: 454px;
+  min-height: 449px;
+  margin: 0;
+  margin-right: 100px;
+}
+
+.about .side-img.left img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 449px;
+}
+
+.about .img-holder {
+  width: 300px;
+  height: 325px;
+  background-color: $gray;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  margin: 0;
+  z-index: 2;
+  position: absolute;
+  box-shadow: 5px 5px 5px 0px #00000025;
+}
+
+
+@media (max-width: 1200px) {
+  .about .item {
+    width: 561px;
+    margin: auto;
+  }
+  .about .item p:first-child {
+    position: relative;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 70px;
+    line-height: 40px;
+    color: $dark-blue;
+    display: block;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about .item {
+    width: 100%;
+    margin: auto;
+  }
+
+  
+}

@@ -1,0 +1,68 @@
+@import "../../Assets/scss/config.scss";
+
+.hero .label {
+  max-width: 1050px;
+  margin: auto;
+  background-color: white;
+  margin-top: 150px;
+  padding: 30px 90px 40px;
+}
+
+.hero .label h1 {
+  margin: 0;
+}
+
+.hero .label p {
+  margin-bottom: 20px;
+}
+
+.hero.hero.special {
+  background-color: $gray;
+  height: 650px;
+}
+
+.hero.special .wrapper{
+  height: auto;
+}
+
+.hero .label > *{
+  text-align: left;
+}
+
+@media (max-width: 1110px) {
+  .hero .label h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  // .hero .label {
+  //   width: 1050px;
+  // }
+
+  .hero .label {
+    width: 90%;
+    padding: 30px 10px;
+  }
+
+  .hero .label h1 {
+    text-align: center;
+  }
+
+  .hero .label p {
+    text-align: center;
+  }
+
+  .hero .summary {
+    display: none;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .hero .label p {
+    text-align: center;
+    font-size: 17px;
+  }
+
+}

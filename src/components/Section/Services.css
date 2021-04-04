@@ -1,0 +1,126 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+.section .wrapper {
+  background: none;
+  width: 1570px;
+  height: 800px; }
+
+.section::before {
+  content: "";
+  display: block;
+  height: 80px;
+  /* fixed header height*/
+  margin: -80px 0 0;
+  /* negative fixed header height */ }
+
+.section .grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-right: 20px;
+  gap: 40px; }
+
+.section .container {
+  display: flex;
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center; }
+
+.section .container p {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: normal; }
+
+.section h1 {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 30px; }
+
+.section .line-of-work {
+  display: flex; }
+
+.section .item:first-child {
+  margin-right: 45px;
+  margin-top: 5px; }
+
+.section .side-img {
+  position: relative; }
+
+.section .img-holder {
+  width: 300px;
+  height: 325px;
+  background-color: #F6F6F6;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 50px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 5px 5px 5px 0px #00000025; }
+
+.section .side-img.right {
+  height: 430px;
+  margin-top: -20px; }
+
+.section .side-img.right img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  height: 430px; }
+
+@media (max-width: 1550px) {
+  .section .wrapper {
+    width: 100%; } }
+@media (max-width: 1200px) {
+  .section .container > img,
+  .section .side-img {
+    display: none; }
+
+  .section .container {
+    width: 90%; }
+
+  .section .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-right: 0;
+    gap: 40px; } }
+@media (max-width: 850px) {
+  .section .grid {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(4, 1fr);
+    margin-right: 0;
+    gap: 40px;
+    margin: auto; }
+
+  .section .wrapper {
+    height: auto;
+    padding-bottom: 110px; }
+
+  .section .item:first-child {
+    margin: 0; }
+
+  .section .line-of-work {
+    display: flex;
+    flex-direction: column; }
+    .section .line-of-work img {
+      margin: auto;
+      margin-bottom: 20px; }
+    .section .line-of-work h1 {
+      text-align: center; }
+    .section .line-of-work p {
+      text-align: center; } }
+@media (max-width: 340px) {
+  .section .grid {
+    grid-template-columns: repeat(1, 90%); } }

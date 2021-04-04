@@ -1,0 +1,176 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+.article .item p:first-child {
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 70px;
+  line-height: 40px;
+  color: #2C4755;
+  display: block;
+  padding-left: 5px; }
+
+.article .item p:last-child {
+  line-height: 32px;
+  font-size: 15px; }
+
+.article .item.special-text p:first-child:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -50px;
+  margin: 0 auto;
+  left: 0;
+  width: 35%;
+  background: #10CAB7; }
+
+.article .item:first-child {
+  width: 580px;
+  margin-top: 0;
+  margin-right: 100px;
+  margin-left: 100px; }
+
+.article .summary {
+  box-shadow: 4px 2px 5px 0px #00000025;
+  padding: 70px 100px;
+  width: 340px; }
+  .article .summary h1 {
+    margin: 0;
+    color: #2C4755;
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .article .summary p {
+    font-size: 13px; }
+  .article .summary .category:not(:last-child) {
+    margin-bottom: 40px; }
+
+.article .container.main {
+  display: block;
+  max-width: 1170px;
+  margin-top: 100px; }
+  .article .container.main .img-container.big {
+    background-color: #ebeced;
+    width: 100%;
+    height: 540px; }
+  .article .container.main .img-container.small {
+    background-color: #ebeced;
+    height: 366px;
+    width: 100%; }
+  .article .container.main .item {
+    width: auto;
+    margin: 0; }
+  .article .container.main .item p {
+    padding: 0;
+    margin: auto;
+    max-width: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500; }
+  .article .container.main .item p:after {
+    display: none; }
+  .article .container.main .grid {
+    margin: 0;
+    margin: auto;
+    margin-top: 75px;
+    gap: 0;
+    gap: 30px; }
+  .article .container.main .grid img {
+    display: block;
+    margin: 0; }
+
+.article .wrapper {
+  max-width: 1450px;
+  display: block;
+  height: auto;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+
+@media (max-width: 1100px) {
+  .article .summary {
+    box-shadow: 0px 4px 10px 0px #00000025;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 70px 50px; }
+    .article .summary .category:not(:last-child) {
+      margin-bottom: 0; }
+    .article .summary .category {
+      width: auto; }
+    .article .summary h1, .article .summary p {
+      text-align: center; }
+
+  .article .container:first-child {
+    flex-direction: column-reverse; }
+
+  .article .item:first-child {
+    margin: auto;
+    width: 100%; }
+
+  .article .container.main {
+    display: block;
+    max-width: 1170px;
+    margin-top: 100px; } }
+@media (max-width: 850px) {
+  .article .item.special-text p:first-child {
+    font-size: 18px; }
+
+  .article .container.main .grid {
+    grid-template-columns: repeat(1, 90%);
+    margin-top: 0; }
+
+  .article .grid > .item:nth-child(3) {
+    grid-row: 4/5; }
+
+  .article .grid > .item:last-child {
+    grid-row: 3/4; }
+
+  .article .grid > .item p {
+    text-align: center; } }
+@media (max-width: 500px) {
+  .article .summary {
+    box-shadow: 0px 4px 10px 0px #00000025;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 20px; }
+    .article .summary .category:not(:last-child) {
+      margin-bottom: 40px; }
+    .article .summary .category {
+      width: 100px; }
+    .article .summary h1, .article .summary p {
+      text-align: center; } }
+@media (max-width: 450px) {
+  .article .summary {
+    box-shadow: 0px 4px 10px 0px #00000025;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 20px; }
+    .article .summary .category:not(:last-child) {
+      margin-bottom: 40px; }
+    .article .summary .category {
+      width: 100px; }
+    .article .summary h1, .article .summary p {
+      text-align: center; } }

@@ -1,0 +1,53 @@
+*,
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img, a {
+  display: block; }
+
+.main-container {
+  position: relative;
+  min-height: 100vh; }
+
+.card {
+  width: 32.5%;
+  margin: 0 auto;
+  padding: 60px 0; }
+
+.card:hover {
+  box-shadow: 5px 5px 5px 0px #00000025; }
+
+.card img {
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: normal;
+  color: #2C4755; }
+
+.card p {
+  font-size: 15px;
+  color: #4d4c4c;
+  line-height: 25px;
+  text-align: center; }
+
+.card-container {
+  max-width: 320px;
+  margin: auto; }
+
+@media (max-width: 1110px) {
+  .card {
+    width: 100%; }
+
+  .card-container {
+    width: 90%;
+    margin: auto; }
+
+  .card:hover {
+    box-shadow: none; } }
