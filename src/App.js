@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className="main-container">
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/leon">
           <Navbar />
           <Switch>
             <Route path='/' exact component={Home} />
