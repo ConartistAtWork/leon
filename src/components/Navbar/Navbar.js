@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Logo from "../../imgs/logo.png"
 import HamburgerIcon from "../../imgs/hamburger.png"
-import { Link } from 'react-scroll'
 import { Link as RouterLink } from "react-router-dom"
 import "./Navbar.css"
 
@@ -11,24 +10,12 @@ function Navbar() {
 
   const handleClick = () => setClick(!click)
 
-  // useEffect(() => {
-  //   // Update the document title using the browser API
-  //   if (click) {
-  //         document.body.style.overflow = 'hidden';
-  //   }
-  //   else if (!click) {
-  //     document.body.style.overflow = 'unset';
-  //   }
-  // });
-
   return (
     <div className="navbar">
       <div className="wrapper-nr">
         <nav className="flex">
           <div className="branding">
-            <Link to="hero" smooth="true"> 
-              <RouterLink to="/" className="nav-link"><img src={Logo} alt="" /></RouterLink>
-            </Link>
+            <RouterLink to="/" className="nav-link" onClick={handleClick}><img src={Logo} alt="" /></RouterLink>
           </div>
           <div className="hamburger" onClick={handleClick}>
             <img src={HamburgerIcon} alt="" />
@@ -40,32 +27,17 @@ function Navbar() {
             <div className="sections">
               <div className="menu-section main">
                 <h1>Menu</h1>
-
-                <Link to="hero" smooth="true" onClick={handleClick}>              
-                  <RouterLink to="/" className="nav-link">Home</RouterLink>
-                </Link>
-                <Link to="services" className="nav-link" smooth="true" onClick={handleClick}>
-                  <RouterLink to="/" className="nav-link">Services</RouterLink>
-                </Link>
-                <Link to="portfolio" className="nav-link" smooth="true" onClick={handleClick}>
-                  <RouterLink to="/" className="nav-link">Portfolio</RouterLink>
-                </Link>
-                <Link to="about" className="nav-link" smooth="true" onClick={handleClick}>
-                  <RouterLink to="/" className="nav-link">About</RouterLink>
-                </Link>
-                <Link to="hero" smooth="true" onClick={handleClick}>
-                  <RouterLink to="info" className="nav-link" smooth="true" onClick={handleClick}>Info</RouterLink>
-                </Link>
+                <RouterLink to="/" className="nav-link" onClick={handleClick}>Home</RouterLink>
+              </div>
+              <div className="menu-section main">
+                <h1>Branding</h1>
+                <RouterLink to="/info" className="nav-link" onClick={handleClick}>Ideas</RouterLink>
               </div>
               <div className="menu-section">
-                <h1>Get In Touch</h1>
-                <Link className="nav-link" onClick={handleClick}>Contact Me</Link>
-              </div>
-              <div className="menu-section">
-                <h1>Get Social</h1>
-                <Link to="/behance" className="nav-link">Behance</Link>
-                <Link to="/dribble" className="nav-link">Dribble</Link>
-                <Link to="/twitter" className="nav-link">Twitter</Link>
+                <h1>Social</h1>
+                <a className="nav-link" target="_blank" rel="noreferrer">Behance</a>
+                <a className="nav-link" target="_blank" rel="noreferrer">Dribble</a>
+                <a className="nav-link" target="_blank" rel="noreferrer">Twitter</a>
               </div>
 
             </div>

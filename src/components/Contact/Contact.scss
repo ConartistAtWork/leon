@@ -1,5 +1,9 @@
 @import "../../Assets/scss/config.scss";
 
+a {
+  cursor: pointer;
+}
+
 .contact {
   background-color: $light-gray;
   height: auto;

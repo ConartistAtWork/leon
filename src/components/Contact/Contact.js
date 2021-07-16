@@ -1,8 +1,14 @@
 import React from 'react';
 import './Contact.css';
 import SectionTitle from '../SectionTitle/SectionTitle'
+import {useEffect} from 'react'
 
 function Contact() {
+
+  useEffect(() =>
+    window.scrollTo(0, 0)
+  )
+
   return (
     <div className="contact section">
       <div className="wrapper">
@@ -12,10 +18,10 @@ function Contact() {
           <h1>leonagency@mail.com</h1>
         </div>
         <div className="social container">
-          <p>Find us on social nerworks:</p>
-          <a href="https://dribbble.com"><i className="fab fa-dribbble"></i></a>
-          <a href="https://google.com"><i className="fab fa-google-plus-g"></i></a>
-          <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
+          <p>Find us on social networks:</p>
+          <a><i className="fab fa-dribbble"></i></a>
+          <a><i className="fab fa-google-plus-g"></i></a>
+          <a><i className="fab fa-twitter"></i></a>
         </div>
       </div>
     </div>
