@@ -3,13 +3,11 @@ import Navbar from "./components/Navbar/Navbar.js"
 import Home from './components/pages/Home';
 import Info from './components/pages/Info';
 import Footer from './components/Footer/Footer.js';
-import Contact from './components/Contact/Contact.js'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import { Link } from 'react-scroll';
 
 function App() {
   return (

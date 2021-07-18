@@ -15,7 +15,7 @@ function Navbar() {
       <div className="wrapper-nr">
         <nav className="flex">
           <div className="branding">
-            <RouterLink to="/" className="nav-link" onClick={handleClick}><img src={Logo} alt="" /></RouterLink>
+            <RouterLink to="/" className="nav-link"><img src={Logo} alt="" /></RouterLink>
           </div>
           <div className="hamburger" onClick={handleClick}>
             <img src={HamburgerIcon} alt="" />

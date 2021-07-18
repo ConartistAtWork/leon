@@ -5,11 +5,8 @@ import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
 import Portfolio from '../Portfolio/Portfolio';
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 function Home() {
-  const { pathname } = useLocation();
-
   useEffect( () =>
     window.scrollTo(0, 0)
   )
