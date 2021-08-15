@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/leon/static/css/main.860f95e3.chunk.css",
+    "main.css": "/leon/static/css/main.4fe40aca.chunk.css",
     "main.js": "/leon/static/js/main.24c7cdce.chunk.js",
     "main.js.map": "/leon/static/js/main.24c7cdce.chunk.js.map",
     "runtime-main.js": "/leon/static/js/runtime-main.3bbf3831.js",
@@ -10,7 +10,7 @@
     "static/js/3.fa9cfbb3.chunk.js": "/leon/static/js/3.fa9cfbb3.chunk.js",
     "static/js/3.fa9cfbb3.chunk.js.map": "/leon/static/js/3.fa9cfbb3.chunk.js.map",
     "index.html": "/leon/index.html",
-    "static/css/main.860f95e3.chunk.css.map": "/leon/static/css/main.860f95e3.chunk.css.map",
+    "static/css/main.4fe40aca.chunk.css.map": "/leon/static/css/main.4fe40aca.chunk.css.map",
     "static/js/2.71b559cf.chunk.js.LICENSE.txt": "/leon/static/js/2.71b559cf.chunk.js.LICENSE.txt",
     "static/media/10.d63c316b.jpg": "/leon/static/media/10.d63c316b.jpg",
     "static/media/11.8092743d.jpg": "/leon/static/media/11.8092743d.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.3bbf3831.js",
     "static/js/2.71b559cf.chunk.js",
-    "static/css/main.860f95e3.chunk.css",
+    "static/css/main.4fe40aca.chunk.css",
     "static/js/main.24c7cdce.chunk.js"
   ]
 }
