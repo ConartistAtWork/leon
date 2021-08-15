@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import "./Portfolio.css"
 import "../ProjectItem/ProjectItem.css"
 import SectionTitle from '../SectionTitle/SectionTitle'
@@ -11,7 +11,6 @@ import GrayBox3 from "../../imgs/12.jpg"
 
 function Portfolio() {
 
-  const [items, setItems] = useState([])
   const [visible, setVisible] = useState(3)
   const [hide, setHide] = useState(false)
   const loadMore = () => {

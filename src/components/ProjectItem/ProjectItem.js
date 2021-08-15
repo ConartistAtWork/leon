@@ -1,7 +1,5 @@
 import React from 'react'
 import "./ProjectItem.css";
-import GrayBox from "../../imgs/graybox.png"
-
 
 function ProjectItem({title, text, url}) {
   return (

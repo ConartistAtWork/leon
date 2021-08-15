@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import Logo from "../../imgs/logo.png"
 import HamburgerIcon from "../../imgs/hamburger.png"
 import { Link as RouterLink } from "react-router-dom"
@@ -39,7 +39,6 @@ function Navbar() {
                 <a className="nav-link" target="_blank" rel="noreferrer">Dribble</a>
                 <a className="nav-link" target="_blank" rel="noreferrer">Twitter</a>
               </div>
-
             </div>
           </div>
           <div className={click ? "filter show" : "filter"}></div>

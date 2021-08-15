@@ -19,9 +19,7 @@ img, a {
   content: "";
   display: block;
   height: 80px;
-  /* fixed header height*/
   margin: -80px 0 0;
-  /* negative fixed header height */
   background-color: white; }
 
 .portfolio .wrapper {
